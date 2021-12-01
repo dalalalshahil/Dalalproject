@@ -1,0 +1,6 @@
+from python:3.8-buster
+run pip install --upgrade pip
+copy requirements.txt
+run pip install -r requirements.txt
+copy src/.
+cmd ["python","trtest.py"]
